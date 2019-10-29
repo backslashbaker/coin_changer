@@ -3,10 +3,6 @@ require './lib/coin_changer'
 
 describe 'Coin changer logic' do
 
-  it 'can make a new object' do
-    amount = Changer.new
-  end
-
   it 'returns 1 when given 1' do
     amount = Changer.new
     expect(amount.change(1)).to eq [1]
