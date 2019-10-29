@@ -1,8 +1,9 @@
+# frozen_string_literal: true
+
 require 'rspec'
 require './lib/coin_changer'
 
 describe 'Coin changer logic' do
-
   before do
     @amount = Changer.new
   end
@@ -31,6 +32,4 @@ describe 'Coin changer logic' do
     amount = Changer.new
     expect(amount.change(99)).to eq [50, 20, 20, 5, 2, 2]
   end
-
-
 end
